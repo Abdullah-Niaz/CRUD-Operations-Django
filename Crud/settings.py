@@ -25,6 +25,7 @@ SECRET_KEY = 'django-insecure-@wy!x)2tse%+054!qeu-n=qe_ag%6=g*6#qr&b^q9c-2nc4@4p
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+
 ALLOWED_HOSTS = ['.vercel.app','.now.sh']
 
 
@@ -55,7 +56,7 @@ ROOT_URLCONF = 'Crud.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR/'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
